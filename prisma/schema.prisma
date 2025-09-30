@@ -34,7 +34,7 @@ model Book {
   summary           String
   historical_period String
   curiosities       String
-  characters        String
+  characters        String?
 
   authorId Int
   author   Author @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
