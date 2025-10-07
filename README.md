@@ -140,12 +140,12 @@ POST /autores
 Content-Type: application/json
 
 {
-  "nome": "Machado de Assis",
-  "imageUrl": "https://exemplo.com/machado.jpg",
-  "biography": "Joaquim Maria Machado de Assis foi um escritor brasileiro...",
-  "historical_period": "Século XIX",
-  "curiosities": "Fundador da Academia Brasileira de Letras"
-}
+    nome: "Rubem Fonseca",
+    imageUrl: "https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2020/04/16/845087/20200416103631864256e.jpg",
+    biography: "Rubem Fonseca (1925-2020) foi um dos principais renovadores da ficção brasileira contemporânea. Nasceu em Juiz de Fora, formou-se em Direito e trabalhou como executivo antes de se dedicar à literatura. Pioneiro do realismo urbano brutal no Brasil, retratou a violência das grandes cidades com linguagem crua e direta. Obras principais: 'Feliz Ano Novo', 'A Grande Arte', 'O Caso Morel', 'Agosto'. Criou um novo estilo narrativo influenciado pelo cinema noir americano.",
+    historical_period: "Literatura Contemporânea (1960-2020)",
+    curiosities: "Evitava aparições públicas e entrevistas, mantendo vida muito reservada. Suas obras foram censuradas durante a ditadura militar por retratarem violência urbana. Era fascinado por investigação criminal e boxe, temas recorrentes em sua obra. Influenciou toda uma geração de escritores brasileiros. Seus livros venderam milhões de exemplares e foram adaptados para cinema e TV."
+  }
 ```
 
 ### Criar um novo livro
@@ -154,14 +154,14 @@ POST /livros
 Content-Type: application/json
 
 {
-  "title": "Dom Casmurro",
-  "imageUrl": "https://exemplo.com/dom-casmurro.jpg",
-  "year_publication": 1899,
-  "summary": "Romance de Machado de Assis sobre ciúme e desconfiança",
-  "historical_period": "Século XIX",
-  "curiosities": "Considerado uma das maiores obras da literatura brasileira",
-  "characters": "Bentinho, Capitu, Escobar",
-  "authorId": 1
+  "title": "O Cobrador",
+  "imageUrl": "https://example.com/o-cobrador.jpg](https://m.media-amazon.com/images/I/41wpjBTIxrL._SY445_SX342_ML2_.jpg",
+  "year_publication": 1979,
+  "summary": "Coletânea que inclui o famoso conto 'O Cobrador', sobre personagem que 'cobra' da sociedade através de assassinatos aleatórios. A obra aprofunda a exploração da violência urbana, mostrando personagens marginalizados que reagem brutalmente à exclusão social. Fonseca consolida seu estilo direto e sua visão pessimista da sociedade brasileira contemporânea.",
+  "historical_period": "Literatura Contemporânea",
+  "curiosities": "O conto 'O Cobrador' tornou-se clássico da literatura brasileira contemporânea. Inspirou filme de Paulo César Saraceni. O personagem-título tornou-se símbolo da violência urbana brasileira. Consolidou a reputação internacional de Rubem Fonseca.",
+  "characters": "essa obra não possui personagens",
+  "authorId": 13
 }
 ```
 
