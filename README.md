@@ -25,6 +25,21 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 - [Git](https://git-scm.com/)
 - [npm](https://www.npmjs.com/) (geralmente vem com o Node.js)
 
+### ✅ Verificar Instalações
+
+Para verificar se as ferramentas estão instaladas corretamente, execute os comandos abaixo no seu terminal:
+
+```bash
+# Verificar versão do Node.js
+node --version
+
+# Verificar versão do npm
+npm --version
+
+# Verificar versão do Git
+git --version
+```
+
 ### 📦 Passo a Passo da Instalação
 
 #### 1. Clone o repositório
