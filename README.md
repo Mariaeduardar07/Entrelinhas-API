@@ -114,6 +114,20 @@ npm run dev
 
 ## 📝 Exemplos de Uso
 
+### Criar um novo autor
+```bash
+POST /autores
+Content-Type: application/json
+
+{
+  "nome": "Machado de Assis",
+  "imageUrl": "https://exemplo.com/machado.jpg",
+  "biography": "Joaquim Maria Machado de Assis foi um escritor brasileiro...",
+  "historical_period": "Século XIX",
+  "curiosities": "Fundador da Academia Brasileira de Letras"
+}
+```
+
 ### Criar um novo livro
 ```bash
 POST /livros
@@ -128,20 +142,6 @@ Content-Type: application/json
   "curiosities": "Considerado uma das maiores obras da literatura brasileira",
   "characters": "Bentinho, Capitu, Escobar",
   "authorId": 1
-}
-```
-
-### Criar um novo autor
-```bash
-POST /autores
-Content-Type: application/json
-
-{
-  "nome": "Machado de Assis",
-  "imageUrl": "https://exemplo.com/machado.jpg",
-  "biography": "Joaquim Maria Machado de Assis foi um escritor brasileiro...",
-  "historical_period": "Século XIX",
-  "curiosities": "Fundador da Academia Brasileira de Letras"
 }
 ```
 
@@ -178,4 +178,4 @@ Entrelinhas-API/
 
 ---
 
-⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
+⭐ Desenvolvido com dedicação por Maria Eduarda Reis | SENAI 2025
