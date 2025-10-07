@@ -35,6 +35,7 @@ class BookModel {
     year_publication,
     historical_period,
     curiosities,
+    characters,
     authorId
   ) {
     const novoLivro = await prisma.book.create({
@@ -44,6 +45,7 @@ class BookModel {
         summary,
         historical_period,
         curiosities,
+        characters,
         year_publication,
         authorId: Number(authorId),
       },
@@ -70,21 +72,24 @@ class BookModel {
       return null;
     }
 
+    // Preparar os dados para atualização, removendo valores undefined
+    const updateData = {};
+    
+    if (title !== undefined) updateData.title = title;
+    if (imageUrl !== undefined) updateData.imageUrl = imageUrl;
+    if (summary !== undefined) updateData.summary = summary;
+    if (historical_period !== undefined) updateData.historical_period = historical_period;
+    if (curiosities !== undefined) updateData.curiosities = curiosities;
+    if (characters !== undefined) updateData.characters = characters;
+    if (year_publication !== undefined) updateData.year_publication = Number(year_publication);
+    if (authorId !== undefined && !isNaN(authorId)) updateData.authorId = Number(authorId);
+
     // Atualize o livro existente com os novos dados
     const livroAtualizado = await prisma.book.update({
       where: {
         id: Number(id),
       },
-      data: {
-        title,
-        imageUrl,
-        summary,
-        historical_period,
-        curiosities,
-        characters,
-        year_publication,
-        authorId: Number(authorId)
-      },
+      data: updateData,
     });
 
     return livroAtualizado;

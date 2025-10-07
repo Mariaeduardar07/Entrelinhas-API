@@ -34,7 +34,7 @@ class BookController {
   async createBook(req, res) {
     try {
       // Captura dos dados do corpo da requisição (frontend)
-      const { title, imageUrl, year_publication, summary, historical_period, authorId, curiosities} = req.body;
+      const { title, imageUrl, year_publication, summary, historical_period, authorId, curiosities, characters} = req.body;
 
       // Verifica se todos os campos da livro foram fornecidos
       if (!title || !imageUrl || !year_publication || !summary || !historical_period || !authorId || !curiosities) {
@@ -52,6 +52,7 @@ class BookController {
         year_publication,
         historical_period,
         curiosities,
+        characters,
         authorId
       );
 
@@ -74,6 +75,21 @@ class BookController {
     try {
       const { id } = req.params;
       const { title, imageUrl, summary, historical_period, authorId, year_publication, curiosities, characters } = req.body;
+
+      // Validar se o ID do livro é válido
+      if (!id || isNaN(id)) {
+        return res.status(400).json({ error: "ID do livro inválido" });
+      }
+
+      // Validar authorId se fornecido
+      if (authorId !== undefined && isNaN(authorId)) {
+        return res.status(400).json({ error: "ID do autor inválido" });
+      }
+
+      // Validar year_publication se fornecido
+      if (year_publication !== undefined && isNaN(year_publication)) {
+        return res.status(400).json({ error: "Ano de publicação inválido" });
+      }
 
       // Atualizar o Livro
       const updatedBook = await BookModel.update(
