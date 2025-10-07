@@ -137,21 +137,19 @@ npm run dev
 ### Criar um novo autor
 ```bash
 POST /autores
-Content-Type: application/json
 
 {
-    nome: "Rubem Fonseca",
-    imageUrl: "https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2020/04/16/845087/20200416103631864256e.jpg",
-    biography: "Rubem Fonseca (1925-2020) foi um dos principais renovadores da ficção brasileira contemporânea. Nasceu em Juiz de Fora, formou-se em Direito e trabalhou como executivo antes de se dedicar à literatura. Pioneiro do realismo urbano brutal no Brasil, retratou a violência das grandes cidades com linguagem crua e direta. Obras principais: 'Feliz Ano Novo', 'A Grande Arte', 'O Caso Morel', 'Agosto'. Criou um novo estilo narrativo influenciado pelo cinema noir americano.",
-    historical_period: "Literatura Contemporânea (1960-2020)",
-    curiosities: "Evitava aparições públicas e entrevistas, mantendo vida muito reservada. Suas obras foram censuradas durante a ditadura militar por retratarem violência urbana. Era fascinado por investigação criminal e boxe, temas recorrentes em sua obra. Influenciou toda uma geração de escritores brasileiros. Seus livros venderam milhões de exemplares e foram adaptados para cinema e TV."
-  }
+  "nome": "Rubem Fonseca",
+  "imageUrl": "https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2020/04/16/845087/20200416103631864256e.jpg",
+  "biography": "Rubem Fonseca (1925-2020) foi um dos principais renovadores da ficção brasileira contemporânea. Nasceu em Juiz de Fora, formou-se em Direito e trabalhou como executivo antes de se dedicar à literatura. Pioneiro do realismo urbano brutal no Brasil, retratou a violência das grandes cidades com linguagem crua e direta. Obras principais: 'Feliz Ano Novo', 'A Grande Arte', 'O Caso Morel', 'Agosto'. Criou um novo estilo narrativo influenciado pelo cinema noir americano.",
+  "historical_period": "Literatura Contemporânea (1960-2020)",
+  "curiosities": "Evitava aparições públicas e entrevistas, mantendo vida muito reservada. Suas obras foram censuradas durante a ditadura militar por retratarem violência urbana. Era fascinado por investigação criminal e boxe, temas recorrentes em sua obra. Influenciou toda uma geração de escritores brasileiros. Seus livros venderam milhões de exemplares e foram adaptados para cinema e TV."
+}
 ```
 
 ### Criar um novo livro
 ```bash
 POST /livros
-Content-Type: application/json
 
 {
   "title": "O Cobrador",
