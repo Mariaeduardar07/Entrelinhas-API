@@ -48,19 +48,18 @@ code .
 npm install
 ```
 
-#### 4. Configure as variáveis de ambiente
+#### 5. Configure as variáveis de ambiente
 Crie um arquivo `.env` na raiz do projeto baseado no `.env.example`:
 
 ```bash
 # Copie o arquivo de exemplo
-cp .env.example .env
+cp .env.example
 ```
 
 Edite o arquivo `.env` com suas configurações:
 ```env
-PORT=5000
+PORT=
 DATABASE_URL="file:./entrelinhas.db"
-JWT_SECRET=seu_jwt_secret_aqui
 ```
 
 #### 5. Execute as migrações do banco de dados
