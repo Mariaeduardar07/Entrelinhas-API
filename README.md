@@ -37,7 +37,13 @@ git clone https://github.com/Mariaeduardar07/Entrelinhas-API.git
 cd Entrelinhas-API
 ```
 
-#### 3. Instale as dependências
+#### 3. **Entre na pasta do projeto**
+
+```bash
+code .
+```
+
+#### 4. Instale as dependências
 ```bash
 npm install
 ```
